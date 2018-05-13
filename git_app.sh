@@ -8,7 +8,6 @@
 # Git version: git version 2.7.4
 # Kernel version: 4.4.0-21-generic
 # Operation system: Ubuntu version 16.04
-# Copyright: Copyright © 2016 Foresight-Robotics Ltd. All rights reserved.
 # Instruction: The script is convenient for using Git distributed version and control system.
 #
 ###################################################################################################
@@ -45,13 +44,7 @@ ISSUE_FLAG=1;
 
 #添加用户，包括用户的名称和MAC地址
 PERSON_ARRAY=(
-    "Cgy/00:0c:29:08:af:6c"
-    "Csm/00:0c:29:16:97:e3"
-    "Fdp/00:0c:29:2c:dd:fc"
-    "Jsy/60:57:18:67:90:A3"
     "Yqc/00:0c:29:e8:16:95"
-    "Zsk/00:0c:29:81:26:4a"
-    "Kzw/08:00:27:07:0e:e3"
 )
 
 
@@ -427,18 +420,18 @@ function judge_current_login_user
 #　函数的功能：判断当前的登录用户是否有权限
 function judge_login_user_legality
 {
-    current_person=$(judge_current_login_user)
-    if [[ $current_person == "" ]];
-    then
-        ECHO $P_INFO "p"
-        ECHO $P_INFO "p" "You do not have permission to use this script, Please contact the administrator!"
-        ECHO $P_INFO "p"
-        exit 1
-    else
-        ECHO $L_INFO "l"
-        ECHO $L_INFO "l" "Hello $current_person Welcome!!!"
-        ECHO $L_INFO "l"
-    fi
+    #current_person=$(judge_current_login_user)
+    #if [[ $current_person == "" ]];
+    #then
+    #    ECHO $P_INFO "p"
+    #    ECHO $P_INFO "p" "You do not have permission to use this script, Please contact the administrator!"
+    #    ECHO $P_INFO "p"
+    #    exit 1
+    #else
+    #    ECHO $L_INFO "l"
+    #    ECHO $L_INFO "l" "Hello $current_person Welcome!!!"
+    #    ECHO $L_INFO "l"
+    #fi
 }
 
 
